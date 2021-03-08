@@ -1,0 +1,486 @@
+Tabla de Contenidos
+------------------------------------
+1 > General
+2 > Cursos
+3 > Boton de Contacto
+5 > Boton Principal
+6 > Home
+7 > Imagen de Cursos
+8 > Footer
+9 > Contacto
+10 > Responsive
+11 > Preloader
+------------------------------------*/
+
+/*------------------------------------*\
+	General
+\*------------------------------------*/
+
+body {
+    font-family: 'Montserrat', sans-serif;
+	font-size: 15px;
+    font-weight: 400;
+    color: #798696;
+	overflow-x:hidden;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	margin-top: 12px;
+	margin-bottom: 15px;
+	font-weight: 600;
+	color: #374050;
+}
+
+h1 {
+	font-size:38px;
+}
+
+h2 {
+	font-size:30px;
+}
+
+h3 {
+	font-size:24px;
+}
+
+h4 {
+	font-size:18px;
+}
+
+a {
+	font-family: 'Lato', sans-serif;
+	color: #374050;
+	font-weight: 700;
+}
+
+a:hover,
+a:focus{
+    text-decoration: none;
+    outline: none;
+	color: #374050;
+	opacity: 0.9;
+}
+
+ul,ol{
+    margin: 0;
+    padding: 0;
+    list-style: none
+}
+
+.white-text {
+	color: #FFF;
+}
+
+blockquote {
+	position: relative;
+	margin: 20px 0px;
+	padding: 20px 20px 20px 60px;
+	border-left: none;
+	color: #374050;
+}
+
+blockquote:before{
+	content:"\f10d";
+	font-family:fontAwesome;
+	position:absolute;
+	left:0;
+	top:0;
+	color: #FF6700;
+	width:40px;
+	height:40px;
+	line-height:40px;
+	text-align:center;
+	border-radius:50%;
+	border:1px solid #EBEBEB;
+}
+
+
+/* --- Cursos --- */
+
+.section {
+	position:relative;
+	padding-top:50px;
+	padding-bottom:50px;
+	background-color: #ffffff;
+}
+
+.section-hr {
+	margin-top:0px;
+	margin-bottom:10px;
+	border-color: #3099FF;
+}
+
+.section-header {
+	margin-bottom:40px;
+}
+
+.bg-image {
+	position:absolute;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+	background-position:center;
+	background-size:cover;
+}
+
+.bg-image.bg-parallax {
+	background-attachment:fixed;
+}
+
+.bg-image.overlay:after {
+	content:"";
+	position:absolute;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#BEDBFF), to(#798696));
+	background-image: linear-gradient(to bottom, #BEDBFF 0%, #74ACF2 100%);
+	opacity: 0.7;
+}
+
+/* --- Boton de Contacto --- */
+
+.main-button {
+	position:relative;
+	display:inline-block;
+	padding:10px 30px;
+	background-color: #3099FF;
+	border: 2px solid transparent;
+	border-radius: 40px;
+	color: #FFF;
+	-webkit-transition:0.2s all;
+	transition:0.2s all;
+}
+
+.main-button:hover , .main-button:focus {
+	background-color:#fff;
+	border: 2px solid #3099FF;
+	color:#3099FF;
+}
+
+.main-button.icon-button:hover , .main-button.icon-button:focus {
+	padding-right: 45px;
+}
+
+.main-button.icon-button:after {
+	content:"\f178";
+	font-family:FontAwesome;
+	position:absolute;
+	width: 30px;
+	right: 15px;
+	text-align:center;
+	opacity:0;
+	-webkit-transition:0.2s all;
+	transition:0.2s all;
+}
+
+.main-button.icon-button:hover:after , .main-button.icon-button:focus:after {
+	opacity:1;
+}
+
+/* --- Boton Principal (p) --- */
+
+.main-button-p {
+	position:relative;
+	display:inline-block;
+	padding:10px 30px;
+	background-color: #3099FF;
+	border: 2px solid transparent;
+	border-radius: 40px;
+	color: #FFF;
+	-webkit-transition:0.2s all;
+	transition:0.2s all;
+}
+
+.main-button-p:hover , .main-button-p:focus {
+	background-color:#fff;
+	border: 2px solid #3099FF;
+	color:#3099FF;
+}
+
+.main-button-p.icon-button:hover , .main-button-p.icon-button:focus {
+	padding-right: 45px;
+}
+
+.main-button-p.icon-button:after {
+	content:"\f178";
+	font-family:FontAwesome;
+	position:absolute;
+	width: 30px;
+	right: 15px;
+	text-align:center;
+	opacity:0;
+	-webkit-transition:0.2s all;
+	transition:0.2s all;
+}
+
+.main-button-p.icon-button:hover:after , .main-button-p.icon-button:focus:after {
+	opacity:1;
+}
+
+/*------------------------------------*\
+	Home
+\*------------------------------------*/
+.hero-area {
+	position:relative;
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+
+#home.hero-area {
+	height:calc(100vh - 0px);
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+.home-wrapper {
+	position:absolute;
+	top:48%;
+	-webkit-transform:translateY(-50%);
+	    -ms-transform:translateY(-50%);
+	        transform:translateY(-50%);
+	left:0;
+	right:0;
+}
+
+.home-wrapper img {
+	width: 160px;
+	height: 160px;
+}
+
+/*------------------------------------*\
+	Imagen de Cursos
+\*------------------------------------*/
+
+.about-video {
+	position: relative;
+	display: block;
+	border-radius: 4px;
+	overflow: hidden;
+}
+
+.about-video > img {
+	width:100%;
+}
+
+.about-video:after {
+	content:"";
+	position:absolute;
+	left:0;
+	right:0;
+	bottom:0;
+	top:0;
+	background-color:#74ACF2;
+	opacity:0.1;
+}
+
+/*------------------------------------*\
+	Footer
+\*------------------------------------*/
+
+#bottom-footer {
+	margin-top: 20px;
+	padding-top: 20px;
+	border-top: 1px solid #EBEBEB;
+}
+
+.footer-copyright {
+	line-height:40px;
+}
+
+.footer-social {
+	text-align:right;
+}
+
+.footer-social li {
+	display:inline-block;
+	margin-left:10px;
+}
+
+.footer-social li a {
+	display:block;
+	width:40px;
+	height:40px;
+	line-height:40px;
+	text-align:center;
+	border-radius:50%;
+	color:#FFF;
+	background-color:#EBEBEB;
+	-webkit-transition:0.2s opacity;
+	transition:0.2s opacity;
+}
+
+.footer-social li a.facebook {
+	background-color:#3b5998;
+}
+
+.footer-social li a.twitter {
+	background-color:#55acee;
+}
+
+.footer-social li a.google-plus {
+	background-color:#dd4b39;
+}
+
+.footer-social li a.instagram {
+	background-color:#e95950;
+}
+
+.footer-social li a.youtube {
+	background-color:#ff0000;
+}
+
+.footer-social li a.linkedin {
+	background-color:#007bb5;
+}
+
+/*------------------------------------*\
+	Contacto
+\*------------------------------------*/
+
+#contact-cta {
+	padding-bottom: 80px;
+}
+
+.contact-form:after {
+	content:"";
+	display:block;
+	clear:both;
+}
+
+.contact-form .input {
+	margin-bottom:20px;
+}
+
+.contact-form textarea.input {
+	height:200px;
+}
+
+.contact-details li  {
+	margin-bottom:20px;
+}
+
+.contact-details li i {
+	color: #FF6700;
+	margin-right: 15px;
+	border: 1px solid #EBEBEB;
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+}
+
+/*------------------------------------*\
+	Responsive
+\*------------------------------------*/
+
+@media only screen and (max-width: 991px) {
+	.section-header h2 {
+		font-size:24px;
+	}
+
+	#why-us .feature {
+		margin-top:40px;
+	}
+	
+	.about-video {
+		margin-top:40px;
+	}
+	
+	#cta {
+		text-align:center;
+	}
+	
+	.footer-logo {
+		text-align:center;
+	}
+	
+	.footer-nav {
+		text-align:center;
+	}
+	.footer-nav li {
+		margin-top: 10px;
+	}
+	
+	.footer-social {
+		text-align:center;
+	}
+	.footer-social li {
+		margin-top: 10px;
+	}
+	
+	.footer-copyright {
+		text-align:center;
+		line-height:inherit;
+		margin-top:20px;
+	}
+	
+	.contact-form  {
+		margin-bottom:40px;
+	}
+
+	.contact-form button {
+		float:none !important;
+	}
+	
+}
+
+@media only screen and (max-width: 767px) {
+	.hero-area h1 {
+		font-size:30px;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	#courses-wrapper [class*='col-xs'] {
+		width:100%;
+	}
+}
+
+/*------------------------------------*\
+	Preloader
+\*------------------------------------*/ 
+
+#preloader {
+	position:fixed;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+	background-color:#FFF;
+	z-index:9999;
+}
+
+#preloader .preloader {
+	position:absolute;
+	left:50%;
+	top:50%;
+	-webkit-transform: translate(-50% , -50%);
+	    -ms-transform: translate(-50% , -50%);
+	        transform: translate(-50% , -50%);
+}
+
+#preloader .preloader:after {
+	content:"";
+	display:block;
+	width:40px;
+	height:40px;
+	border: 1px solid #EBEBEB;
+    border-top: 1px solid #FF6700;
+    border-radius: 50%;
+	-webkit-animation: 1s preloader linear infinite;
+	        animation: 1s preloader linear infinite;
+}
+
+@-webkit-keyframes preloader {
+	from { -webkit-transform: rotate(0deg); transform: rotate(0deg);}
+	to { -webkit-transform: rotate(360deg); transform: rotate(360deg);}
+}
+
+@keyframes preloader {
+	from { -webkit-transform: rotate(0deg); transform: rotate(0deg);}
+	to { -webkit-transform: rotate(360deg); transform: rotate(360deg);}
+}
